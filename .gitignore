@@ -2,7 +2,14 @@
 *.class
 
 # Log file
-*.log
+Paper/*.log
+Paper/*.aux
+Paper/*.bbl
+Paper/*.blg
+Paper/*.sty
+Paper/*.pdf
+Paper/*.out
+Paper/*.synctex.gz
 
 # BlueJ files
 *.ctxt
@@ -14,8 +21,8 @@
 *.jar
 *.war
 *.nar
-*.zip
-*.tar.gz
+*/.zip
+*/.tar.gz
 *.ear
 *.rar
 
