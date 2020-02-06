@@ -81,10 +81,10 @@
 \subsection*{SINGLE SPECIES CASE}
 
 \begin{enumerate}
-	\item A trait $T$ of dimension $n \times m$ is measured across different environmental gradient repeatedly over time. Thus, at every time point we have a $n \times m$ matrix of trait values.
+	\item A trait matrix $\Gamma$ (containing traits $T_1, \ldots, T_m$) of dimension $n \times m$ is measured across different environmental gradient repeatedly over time. Thus, at every time point we have a $n \times m$ matrix of trait values.
 	\item An abundance $N$ is also measured repeatedly over time. At every time point, we have a single abundance value.
-	\item The trait is assumed normally distributed, i.e. $T_t \sim N(\mu_t, \sigma^2_{T})$ at every time point $t$.
-	\item Following from $3$, $\bar{T}$
+	\item If each trait is assumed normally distributed, i.e. $T_{it} \sim N(\mu_{it}, \sigma^2_{T_i})$ at every time point $t$. Thus, then $\mu_{T_{it}}$ (trait focal point) and $\sigma^2_{T_i}$ (intraspecific diversity) describes the entire trait $T_{i}$ at every time point $t$.
+	\item Following from $3$, $\bar{T_{it}} \sim N(\mu_{it}, \frac{\sigma^2_{T_i}}{n_{ti}})$
 \end{enumerate}
 
 \subsection*{TWO SPECIES CASE}
